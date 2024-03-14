@@ -1,0 +1,94 @@
+body{
+	background-color: #121926;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+
+.Profile{
+	column-gap: 50px;
+}
+
+.Profile, #University, .icon{
+	padding: 20px;
+	border-radius: 16px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.MyFace{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	background-color: #a211ed;
+	border-radius: 16px;
+	animation: neonGlow 1s infinite alternate;	
+}
+
+.Info{
+	animation: cardAnimation 1s ease;
+}
+
+#University{
+	animation: cardAnimation 1s ease;
+}
+
+@keyframes neonGlow{
+	from{
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	}
+	to{
+		box-shadow: 0px 0px 20px #5515ec,
+		0px 0px 30px #17b8ea,
+		0px 0px 40px #ff0084;
+	}
+}
+
+@keyframes cardAnimation{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+h1{
+	color: #9FEF00;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.MyName{
+	height: 80px;
+	justify-content: center;
+}
+
+h2{
+	color: #A4B1CD;
+}
+
+.icon{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gem: 50px;
+	column-gap: 5%;
+	animation: neonGlow 1s ease;	
+}
+.ChildIcon img{
+	width:50px;
+	height:50px;
+	display: inline-block;
+}
+a{
+	font-size: 20px;
+	color: #12eb26;
+	display: inline;
+}
